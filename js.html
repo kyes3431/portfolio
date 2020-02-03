@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta carset="UTF-8">
+<meta charset="UTF-8">
 </head>
 <body>
 	<button id="myButton">Click me</button>
-	<!-- mybutton ÀÌ¶ó´Â ÀÌ¾Æµğ °ªÀ» °®´Â ¹öÆ° »ı¼º -->
-	<INPUT type="button" value="¹è°æ»ö º¯°æ" onClick="document.bgColor='red';">
+	<!-- mybutton ì´ë¼ëŠ” ì´ì•„ë”” ê°’ì„ ê°–ëŠ” ë²„íŠ¼ ìƒì„± -->
+	<INPUT type="button" value="ë°°ê²½ìƒ‰ ë³€ê²½" onClick="document.bgColor='red';">
 	<INPUT type=" text" id="name1" onfocus="focusFunction(this.id)">
 	<INPUT type="text" id="name2" onfocus="focusFunction(this.id)"
 		onblur="blurFunction(this.id)">
@@ -14,11 +14,11 @@
 		onblur="blurFunction(this.id)">
 
 	<script>
-		//mybuttonÀÌ¶ó´Â ¾ÆÀÌµğ°ªÀ» °®´Â ¿¤¸®¸ÕÆ®¸¦ Ã£¾Æ button¿¡ ÀúÀå
+		//mybuttonì´ë¼ëŠ” ì•„ì´ë””ê°’ì„ ê°–ëŠ” ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ ì°¾ì•„ buttonì— ì €ì¥
 		var button = document.getElementById('myButton');
-		//button¿¡ clickÀÌº¥Æ®ÇÚµé·¯ Ãß°¡
+		//buttonì— clickì´ë²¤íŠ¸í•¸ë“¤ëŸ¬ ì¶”ê°€
 		button.addEventListener('click', function() {
-			//¹öÆ°Å¬¸¯½Ã 'button clicked'¶ó°í Ãâ·Â
+			//ë²„íŠ¼í´ë¦­ì‹œ 'button clicked'ë¼ê³  ì¶œë ¥
 			document.write('button clicked!');
 		});
 		function dblClickFunction(x) {
