@@ -7,15 +7,12 @@
 	<button id="myButton">Click me</button>
 	<!-- mybutton 이라는 이아디 값을 갖는 버튼 생성 -->
 	<INPUT type="button" value="배경색 변경" onClick="document.bgColor='red'">
-
 	<INPUT type=" text" id="name1" onfocus="focusFunction(this.id)">
-
+	<INPUT type="text" id="name2" onfocus="focusFunction(this.id)"
+		onblur="blurFunction(this.id)">
 	<INPUT type="text" id="name2" onfocus="focusFunction(this.id)"
 		onblur="blurFunction(this.id)">
 
-	<INPUT type="text" id="name2" onfocus="focusFunction(this.id)"
-		onblur="blurFunction(this.id)">
-	
 	<script>
 		//mybutton이라는 아이디값을 갖는 엘리먼트를 찾아 button에 저장
 		var button = document.getElementById('myButton');
@@ -36,7 +33,7 @@
 		}
 		function blurFunction(x) {
 			document.getElementById(x).style.background = "red";
-		}
+		}}
 	</script>
 </body>
 </html>
