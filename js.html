@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta carset = "UTF-8">
+<meta carset="UTF-8">
 </head>
 <body>
-<button id="myButton">Click me</button> <!-- mybutton 이라는 이아디 값을 갖는 버튼 생성 -->
-<script>
-//mybutton이라는 아이디값을 갖는 엘리먼트를 찾아 button에 저장
-var button = document.getElementById('myButton');
-//button에 click이벤트핸들러 추가
-button.addEventListener('click', function() { 
-//버튼클릭시 'button clicked'라고 출력
-document.write('button clicked!'); 
-}); 
-</script>
+	<button id="myButton">Click me</button>
+	<!-- mybutton 이라는 이아디 값을 갖는 버튼 생성 -->
+	<INPUT type="button" value="배경색 변경" onClick="document.bgColor='red'">
+
+	<INPUT type=" text" id="name1" onfocus="focusFunction(this.id)">
+
+	<INPUT type="text" id="name2" onfocus="focusFunction(this.id)"
+		onblur="blurFunction(this.id)">
+
+	<INPUT type="text" id="name2" onfocus="focusFunction(this.id)"
+		onblur="blurFunction(this.id)">
+	
+	<script>
+		//mybutton이라는 아이디값을 갖는 엘리먼트를 찾아 button에 저장
+		var button = document.getElementById('myButton');
+		//button에 click이벤트핸들러 추가
+		button.addEventListener('click', function() {
+			//버튼클릭시 'button clicked'라고 출력
+			document.write('button clicked!');
+		});
+		function dblClickFunction(x) {
+			if (document.getElementById(x).style.background == "white") {
+				document.getElementById(x).style.background = "green";
+			} else {
+				document.getElementById(x).style.background = "white";
+			}
+		}
+		function focusFunction(x) {
+			document.getElementById(x).style.background = "yellow";
+		}
+		function blurFunction(x) {
+			document.getElementById(x).style.background = "red";
+		}
+	</script>
 </body>
 </html>
