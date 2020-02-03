@@ -6,10 +6,14 @@
 <body>
 	<button id="myButton">Click me</button>
 	<!-- mybutton 이라는 이아디 값을 갖는 버튼 생성 -->
-	<INPUT type="button" value="배경색 변경" onClick="document.bgColor='red';"><br/>
-	<INPUT type=" text" id="name1" onfocus="focusFunction(this.id)"><br/>
+	<form id="form_dbl" dblClick=dblClickFunction(this,id)></form>
+	<INPUT type="button" value="배경색 변경" onClick="document.bgColor='red';">
+	<br />
+	<INPUT type=" text" id="name1" onfocus="focusFunction(this.id)">
+	<br />
 	<INPUT type="text" id="name2" onfocus="focusFunction(this.id)"
-		onblur="blurFunction(this.id)"><br/>
+		onblur="blurFunction(this.id)">
+	<br />
 	<INPUT type="text" id="name2" onfocus="focusFunction(this.id)"
 		onblur="blurFunction(this.id)">
 
